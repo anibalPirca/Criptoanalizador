@@ -28,17 +28,6 @@ public class Main {
         scanner.close();
         }
 
-        /*
-    private static void manejarEncriptar(Scanner scanner) {
-        System.out.print("Por favor, ingrese el nombre del archivo a encriptar: ");
-        String nombreArchivoOriginal = scanner.next();
-        String rutaArchivo = "D:\\" + nombreArchivoOriginal + ".txt";
-        LeerArchivo fileReaderHelper = new LeerArchivo(rutaArchivo);
-        String textoDelArchivo = fileReaderHelper.getTexto();
-        Encriptador encriptador = new Encriptador();
-        String textoEncriptado = encriptador.encriptar(textoDelArchivo, 1);
-        System.out.println("Texto encriptado: " + textoEncriptado);
-    }*/
 
 
     private static void manejarEncriptar(Scanner scanner) {
@@ -58,7 +47,6 @@ public class Main {
     private static void manejarDesencriptar(Scanner scanner) {
         System.out.print("Por favor, ingrese el nombre del archivo a desencriptar (sin extensión): ");
         String nommbreArchivoEncriptado = scanner.next();
-        //String rutaArchivo = "D:\\" + nombreArchivoEncriptado + ".txt";
         String rutaArchivo = nommbreArchivoEncriptado + ".txt";
         LeerArchivo fileReaderHelper = new LeerArchivo(rutaArchivo);
         String textoDelArchivo = fileReaderHelper.getTexto();
